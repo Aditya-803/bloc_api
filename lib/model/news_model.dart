@@ -5,6 +5,10 @@ class NewsModel{
 
   NewsModel({this.status,this.totalResults,this.articles});
 
+  NewsModel.withError(String errorMessage){
+    String error = errorMessage;
+  }
+
   NewsModel.fromJson(Map<String,dynamic> json){
     status = json['status'];
     totalResults = json['totalResults'];
