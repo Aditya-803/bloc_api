@@ -1,7 +1,5 @@
 part of 'news_bloc.dart';
 
-import 'package:bloc_api/model/news_model.dart';
-
 abstract class NewsState extends Equatable{
   const NewsState();
 

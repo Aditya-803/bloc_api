@@ -2,8 +2,9 @@ class NewsModel{
   String? status;
   int? totalResults;
   List<Articles>? articles;
+  String? error;
 
-  NewsModel({this.status,this.totalResults,this.articles});
+  NewsModel({this.status,this.totalResults,this.articles,this.error});
 
   NewsModel.withError(String errorMessage){
     String error = errorMessage;
